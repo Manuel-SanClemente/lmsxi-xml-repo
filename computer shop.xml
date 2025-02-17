@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop [
+    <!ELEMENT shop (product+, costumer*, sale*)>
+
+    <!ELEMENT product (title, (manufacturered | brand), model, price, stock, reaconditioned?)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT manufacturered (#PCDATA)>
+    <!ELEMENT brand (#PCDATA)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT stock (#PCDATA)>
+    <!ELEMENT reaconditioned EMPTY>
+
+    <!ATTLIST product idP ID #REQUIRED>
+    <!ATTLIST product ean CDATA #IMPLIED>
+    <!ATTLIST product vat ( general|reduced|super-reduced ) #IMPLIED>
+    <!ATTLIST price currency ( EUR|USD ) #REQUIRED>
+    <!ATTLIST price discount CDATA "0">
+
+
+    <!ELEMENT costumer (idcard, (completename | (name, surname)), telephone*, address?)>
+    <!ELEMENT idcard (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT surname (#PCDATA)>
+    <!ELEMENT telephone (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+
+    <!ATTLIST costumer idC ID #REQUIRED>
+    <!ATTLIST costumer datecreation NMTOKEN #REQUIRED>
+
+
+    <!ELEMENT sale (productlist+, totalprice, currency)>
+    <!ELEMENT productlist (#PCDATA)>
+    <!ELEMENT totalprice (#PCDATA)>
+    <!ELEMENT currency (#PCDATA)>
+
+    <!ATTLIST sale date NMTOKEN #REQUIRED>
+    <!ATTLIST sale idC IDREFS #REQUIRED>
+    <!ATTLIST sale idP IDREFS #REQUIRED>
+    <!ATTLIST sale quantitysold CDATA "1">
+]>
+<shop>
+    <product idP="P2" ean="4986316L" vat="general">
+        <title></title>
+        <manufacturered></manufacturered>
+        <model></model>
+        <price currency="EUR" discount="0"></price>
+        <stock></stock>
+        <reaconditioned />
+    </product>
+    <costumer idC="C1" datecreation="2">
+        <idcard></idcard>
+        <name></name>
+        <surname></surname>
+        <telephone></telephone>
+        <address></address>
+    </costumer>
+    <sale date="2024" idC="C1" idP="P2" quantitysold="2">
+        <productlist></productlist>
+        <totalprice></totalprice>
+        <currency></currency>
+    </sale>
+</shop>

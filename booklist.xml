@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklist SYSTEM "booklist.dtd">
+<booklist>
+    <book>
+        <bookname>Metamorfosis</bookname>
+        <author>Franz Kafka</author>
+        <price>9.99</price>
+        <homepage>https://es.wikipedia.org/wiki/La_metamorfosis</homepage>
+    </book>
+    <book>
+        <bookname></bookname>
+        <author></author>
+        <price></price>
+        <homepage></homepage>
+    </book>
+    <book>
+        <bookname></bookname>
+        <author></author>
+        <price></price>
+        <homepage></homepage>
+    </book>
+</booklist>

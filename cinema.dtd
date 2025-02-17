@@ -1,0 +1,9 @@
+<!ELEMENT cinema (film+, filmaker+, note)>
+<!ELEMENT film (name+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT filmaker (name+)>
+<!ELEMENT note (#PCDATA|alert)*>
+<!ELEMENT alert EMPTY>
+<!ATTLIST film id ID #REQUIRED>
+<!ATTLIST filmaker id ID #REQUIRED>
+<!ATTLIST film maker IDREF #IMPLIED>

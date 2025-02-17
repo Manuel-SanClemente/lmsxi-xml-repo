@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="language" />
+    <xs:complexType name="languageType">
+        <xs:sequence>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="level" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="date" type="xs:integer"/>
+    </xs:complexType>
+    <xs:simpleType name="typeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Low Level" />
+            <xs:enumeration value="High Level" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

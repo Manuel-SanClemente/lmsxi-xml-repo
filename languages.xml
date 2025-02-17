@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languages xmlns:xsi=" http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="languages.xsd">
+    <language name="java" date="1995">
+        <type></type>
+        <level>High Level</level>
+    </language>
+    <language name="javascript" date="1995">
+        <type></type>
+        <level>High Level</level>
+    </language>
+    <language name="html" date="1993">
+        <type></type>
+        <level>High Level</level>
+    </language>    
+    <language name="xml" date="2006">
+        <type></type>
+        <level>High Level</level>
+    </language>
+</languages>
