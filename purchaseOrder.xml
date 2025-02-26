@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="purchaseOrder.xsd" orderDate="1999-11-01">
+    <shipTo>
+        <name>New York</name>
+        <street>Wallstreet</street>
+        <city>New York</city>
+        <state>New York</state>
+        <zip>4892.051</zip>
+    </shipTo>
+    <billTo>
+        <name>California</name>
+        <street>Las Venturas</street>
+        <city>Los Angeles</city>
+        <state>California</state>
+        <zip>1960.5</zip>
+    </billTo>
+    <comment>None</comment>
+    <items>
+        <item/>
+    </items>
+
+</purchaseOrder>
